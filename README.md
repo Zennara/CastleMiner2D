@@ -8,6 +8,9 @@ Please join our discord server to stay updated with concept changes, dev logs, a
 
 [Join Now](https://discord.gg/xdvHuzcGa9)
 
+## Open-Source
+If *you* want to contribute to this project, you can! Please make your changes and send them in the form of a pull request. If you are not familiar with Github, I suggest reading the docs [here](https://docs.github.com/en). We use **Godot 3.1** as the engine for this project.
+
 ## Creators
 ### Managers
 Creator, Lead Developer | **Keagan Landfried**, *aka Zennara* | [Social](https://www.zennara.me)
