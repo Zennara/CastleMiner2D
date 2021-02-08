@@ -443,10 +443,6 @@ extents = Vector2( 5.60008, 15.8445 )
 
 [node name="World" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-offset = Vector2( 300, 170 )
-current = true
-
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 46 )
 cell_size = Vector2( 16, 16 )
@@ -459,6 +455,9 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
 
 [node name="Body" type="AnimatedSprite" parent="Player"]
 position = Vector2( 250, 110 )
