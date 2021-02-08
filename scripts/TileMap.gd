@@ -18,6 +18,7 @@ func _physics_process(delta):
 	
 	$Breaking.position = (get_global_mouse_position() - Vector2(8,8)).snapped(Vector2(16,16))
 	
+	
 	if Input.is_action_pressed("use"):
 		duration += delta
 		print(duration)
@@ -39,7 +40,7 @@ func _physics_process(delta):
 			$Breaking.frame = 0
 		
 		if duration >= BREAK_TIME:
-			set_cell(cellx, celly, 1)
+			set_cell(cellx, celly, -1)
 			duration = 0
 
 	if Input.is_action_just_released("use"):
