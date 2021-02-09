@@ -20,4 +20,4 @@ Lead Artist | **SocuciusTarkus**, *aka jfk1963#7337* | [Social](https://www.inst
 Lead Composer | **Ryan Rodriguez**, *aka Rodz US* | [Social](https://instagram.com/ryan_5.slow?igshid=3591j3q7fmix)
 
 ### Regulars
-Artist | **Clown**, *aka Clown#1160*
+Artist | **Joseph Egan**, *aka Clown*
