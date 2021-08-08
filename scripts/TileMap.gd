@@ -9,13 +9,17 @@ var duration = 0
 var BREAK_TIME = 1
 var breakable = true
 var tile
+var tile_pos
+var mouse_pos
+var old_tile
 
 func _ready():
 	pass
 
 func _physics_process(delta):
-	var mouse_pos = get_global_mouse_position()
-	var tile_pos = world_to_map(mouse_pos)
+	mouse_pos = get_global_mouse_position()
+	old_tile = tile_pos
+	tile_pos = world_to_map(mouse_pos)
 	print(get_cellv(tile_pos))
 	
 	cellx = int(mouse_pos.x / get_cell_size().x)
@@ -24,10 +28,12 @@ func _physics_process(delta):
 	$Breaking.position = (mouse_pos - Vector2(8,8)).snapped(Vector2(16,16))
 	
 	breakable = true
+	if tile_pos != old_tile:
+		$Breaking.frame = 0
+		duration = 0
 	match get_cellv(tile_pos):
 		-1:
 			breakable = false
-			$Breaking.frame = 0
 		0:
 			pass
 		1:
