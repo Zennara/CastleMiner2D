@@ -30,6 +30,6 @@ func _input(event):
 	if holding_item:
 		holding_item.global_position = get_global_mouse_position()
 		
-func _physics_process(delta):
-	$TextureRect.set_global_position(get_node("../Player/CollisionShape2D").position)
-	$GridContainer.set_global_position(get_node("../Player/CollisionShape2D").position)
+#func _physics_process(delta):
+	#$TextureRect.set_global_position(get_node("../Player/CollisionShape2D").position)
+	#$GridContainer.set_global_position(get_node("../Player/CollisionShape2D").position)

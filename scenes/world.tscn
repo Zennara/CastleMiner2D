@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=2]
+[gd_scene load_steps=73 format=2]
 
 [ext_resource path="res://assets/tilemaps/block_textures.png" type="Texture" id=1]
 [ext_resource path="res://sprites/player/idle/idle.png" type="Texture" id=2]
@@ -22,6 +22,8 @@
 [ext_resource path="res://sprites/block_break/6.png" type="Texture" id=20]
 [ext_resource path="res://sprites/block_break/1.png" type="Texture" id=21]
 [ext_resource path="res://sprites/block_break/0.png" type="Texture" id=22]
+[ext_resource path="res://scenes/Inventory.tscn" type="PackedScene" id=23]
+[ext_resource path="res://scripts/UserInterface.gd" type="Script" id=24]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -1193,3 +1195,9 @@ offset = Vector2( 0, -5 )
 position = Vector2( -1, -5 )
 texture = ExtResource( 5 )
 offset = Vector2( 3, 3 )
+
+[node name="UserInterface" type="CanvasLayer" parent="."]
+script = ExtResource( 24 )
+
+[node name="Inventory" parent="UserInterface" instance=ExtResource( 23 )]
+visible = false
