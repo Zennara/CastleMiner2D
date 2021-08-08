@@ -34,6 +34,7 @@ func _physics_process(delta):
 	match get_cellv(tile_pos):
 		-1:
 			breakable = false
+			$Breaking.frame = 0
 		0:
 			pass
 		1:
