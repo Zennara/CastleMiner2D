@@ -26,4 +26,19 @@ func refresh_style():
 	if item == null:
 		set("custom_styles/panel", empty_style)
 	else:
-		set("custom_ctyles/panel", default_style	)
+		set("custom_ctyles/panel", default_style)
+
+func pickFromSlot():
+	remove_child(item)
+	var inventoryNode = find_parent("Inventory")
+	inventoryNode.add_child(item)
+	item = null
+	refresh_style()
+	
+func putIntoSlot(new_item):
+	item = new_item
+	item.position = Vector2(0, 0)
+	var inventoryNode = find_parent("Inventory")
+	inventoryNode.remove_child(item)
+	add_child(item)
+	refresh_style()
