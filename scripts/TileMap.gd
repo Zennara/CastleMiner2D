@@ -18,7 +18,8 @@ func _ready():
 	pass
 
 func _physics_process(delta):
-	mouse_pos = get_global_mouse_position()
+	update()
+	mouse_pos = get_local_mouse_position()
 	old_tile = tile_pos
 	tile_pos = world_to_map(mouse_pos)
 	print(get_cellv(tile_pos))
@@ -28,6 +29,7 @@ func _physics_process(delta):
 	
 	$Breaking.position = (mouse_pos - Vector2(8,8)).snapped(Vector2(16,16))
 	
+	#check if another tile is selected
 	breakable = true
 	if tile_pos != old_tile:
 		$Breaking.frame = 0
@@ -40,11 +42,12 @@ func _physics_process(delta):
 			pass
 		1:
 			pass
-	#print(tile_pos)
-	#print(player.get_global_position())
+
+	#check distance of tile
 	if mouse_pos.distance_to(player.position) > 60:
 		breakable = false
 
+	#break block
 	if Input.is_action_pressed("use") and breakable == true:
 		duration += delta
 		#DEBUG print(duration)
