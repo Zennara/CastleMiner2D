@@ -12,6 +12,7 @@ var tile
 var tile_pos
 var mouse_pos
 var old_tile
+onready var player = get_node("../Player")
 
 func _ready():
 	pass
@@ -39,6 +40,10 @@ func _physics_process(delta):
 			pass
 		1:
 			pass
+	#print(tile_pos)
+	#print(player.get_global_position())
+	if mouse_pos.distance_to(player.position) > 60:
+		breakable = false
 
 	if Input.is_action_pressed("use") and breakable == true:
 		duration += delta
