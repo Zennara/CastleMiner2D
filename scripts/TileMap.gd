@@ -27,11 +27,7 @@ func raycast(cords):
 	var ray = get_world_2d().direct_space_state.intersect_ray(Vector2(player.position.x, player.position.y-10), get_global_mouse_position(), [player])
 	if ray.get("collider") != null:
 		print(ray.collider)
-		#for left and right
-		if playerbody.flip_h == true:
-			castcords = world_to_map(Vector2(ray.position.x-5, ray.position.y))
-		else:
-			castcords = world_to_map(ray.position)
+		castcords = world_to_map(ray.position - ray.normal)
 		print(cords)
 		print(castcords)
 		return castcords != cords
