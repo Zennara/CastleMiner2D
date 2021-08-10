@@ -3,13 +3,13 @@ This game hopefully will allow a 2D experience similar to DigitalDNA's *CastleMi
 CastleMiner2D is not the official name for the project.
 
 ## Development
-Please join our discord server to stay updated with concept changes, dev logs, and discussion regarding future development.
+Please join our discord server to stay updated with concept changes, dev logs, and discussion regarding future development. You can also file an [issue](https://github.com/Zennara/CastleMiner2D/issues) for a bug report or a feature request.
 > This is where we get all of our suggestions!
 
 [Join Now](https://discord.gg/xdvHuzcGa9)
 
 ## Open-Source
-If *you* want to contribute to this project, you can! Please make your changes and send them in the form of a pull request. If you are not familiar with Github, I suggest reading the docs [here](https://docs.github.com/en). We use **Godot 3.1** as the engine for this project.
+If *you* want to contribute to this project, you can! Please make your changes and send them in the form of a pull request. If you are not familiar with Github, I suggest reading the docs [here](https://docs.github.com/en). We use the latest version of [Godot](https://godotengine.org) as the engine for this project.
 
 ## Creators
 ### Managers
@@ -21,3 +21,6 @@ Lead Composer | **Ryan Rodriguez**, *aka Rodz US* | [Social](https://instagram.c
 
 ### Regulars
 Artist | **Joseph Egan**, *aka Clown*
+
+### Contributors
+Art | **Bartley**
