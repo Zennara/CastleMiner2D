@@ -21,3 +21,6 @@ Lead Composer | **Ryan Rodriguez**, *aka Rodz US* | [Social](https://instagram.c
 
 ### Regulars
 Artist | **Joseph Egan**, *aka Clown*
+
+### Contributors
+Art | **Bartley**
