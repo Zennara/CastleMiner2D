@@ -13,6 +13,7 @@ var tile_pos
 var mouse_pos
 var old_tile
 var castcords
+var castcords2
 onready var player = get_node("../Player")
 onready var playerbody = get_node("../Player/Body")
 
@@ -20,19 +21,23 @@ func _ready():
 	pass
 	
 func _draw():
-	draw_line(Vector2(player.position.x, player.position.y - 10), get_local_mouse_position(), Color.red)
+	draw_line(Vector2(player.position.x, player.position.y - 12), get_local_mouse_position(), Color.red)
+	draw_line(Vector2(player.position.x, player.position.y + 12), get_local_mouse_position(), Color.red)
 	
 func raycast(cords):
 	#raycast
-	var ray = get_world_2d().direct_space_state.intersect_ray(Vector2(player.position.x, player.position.y-10), get_global_mouse_position(), [player])
+	var ray = get_world_2d().direct_space_state.intersect_ray(Vector2(player.position.x, player.position.y-12), get_global_mouse_position(), [player])
+	var ray2 = get_world_2d().direct_space_state.intersect_ray(Vector2(player.position.x, player.position.y+12), get_global_mouse_position(), [player])
+	castcords = null
+	castcords2 = null
 	if ray.get("collider") != null:
-		print(ray.collider)
 		castcords = world_to_map(ray.position - ray.normal)
-		print(cords)
-		print(castcords)
-		return castcords != cords
+	if ray2.get("collider") != null:
+		castcords2 = world_to_map(ray2.position - ray2.normal)
+	return cords != castcords && cords != castcords2
 	print(cords)
 	print(castcords)
+	print(castcords2)
 
 func _physics_process(delta):
 	update()
