@@ -12,10 +12,31 @@ var tile
 var tile_pos
 var mouse_pos
 var old_tile
+var castcords
 onready var player = get_node("../Player")
+onready var playerbody = get_node("../Player/Body")
 
 func _ready():
 	pass
+	
+func _draw():
+	draw_line(Vector2(player.position.x, player.position.y - 10), get_local_mouse_position(), Color.red)
+	
+func raycast(cords):
+	#raycast
+	var ray = get_world_2d().direct_space_state.intersect_ray(Vector2(player.position.x, player.position.y-10), get_global_mouse_position(), [player])
+	if ray.get("collider") != null:
+		print(ray.collider)
+		#for left and right
+		if playerbody.flip_h == true:
+			castcords = world_to_map(Vector2(ray.position.x-5, ray.position.y))
+		else:
+			castcords = world_to_map(ray.position)
+		print(cords)
+		print(castcords)
+		return castcords != cords
+	print(cords)
+	print(castcords)
 
 func _physics_process(delta):
 	update()
@@ -28,7 +49,7 @@ func _physics_process(delta):
 	celly = int(mouse_pos.y / get_cell_size().y)
 	
 	$Breaking.position = (mouse_pos - Vector2(8,8)).snapped(Vector2(16,16))
-	
+
 	#check if another tile is selected
 	breakable = true
 	if tile_pos != old_tile:
@@ -43,9 +64,13 @@ func _physics_process(delta):
 		1:
 			pass
 
-	#check distance of tile
-	if mouse_pos.distance_to(player.position) > 60:
+	#check if raycast collides is not selected tile
+	if raycast(tile_pos):
 		breakable = false
+
+	#check distance of tile
+	#if mouse_pos.distance_to(player.position) > 60:
+		#breakable = false
 
 	#break block
 	if Input.is_action_pressed("use") and breakable == true:
