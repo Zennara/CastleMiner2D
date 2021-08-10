@@ -69,8 +69,8 @@ func _physics_process(delta):
 		breakable = false
 
 	#check distance of tile
-	#if mouse_pos.distance_to(player.position) > 60:
-		#breakable = false
+	if mouse_pos.distance_to(player.position) > 60:
+		breakable = false
 
 	#break block
 	if Input.is_action_pressed("use") and breakable == true:
