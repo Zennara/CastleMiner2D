@@ -1182,7 +1182,6 @@ __meta__ = {
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
-zoom = Vector2( 2, 2 )
 
 [node name="FPS Counter" type="RichTextLabel" parent="Player/Camera2D"]
 margin_left = -296.0

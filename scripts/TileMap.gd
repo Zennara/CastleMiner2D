@@ -34,7 +34,8 @@ func raycast(cords):
 		castcords = world_to_map(ray.position - ray.normal)
 	if ray2.get("collider") != null:
 		castcords2 = world_to_map(ray2.position - ray2.normal)
-	return cords != castcords && cords != castcords2
+	if ray2.get("collider") != null || ray.get("collider") != null:
+		return cords != castcords && cords != castcords2
 	print(cords)
 	print(castcords)
 	print(castcords2)
