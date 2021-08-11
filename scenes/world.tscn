@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=2]
+[gd_scene load_steps=85 format=2]
 
 [ext_resource path="res://assets/tilemaps/block_textures.png" type="Texture" id=1]
 [ext_resource path="res://sprites/player/idle/idle.png" type="Texture" id=2]
@@ -33,6 +33,7 @@
 [ext_resource path="res://sprites/player/run/armrun8.png" type="Texture" id=31]
 [ext_resource path="res://sprites/player/run/armrun4.png" type="Texture" id=32]
 [ext_resource path="res://scenes/ItemDrop.tscn" type="PackedScene" id=33]
+[ext_resource path="res://scripts/PickupZone.gd" type="Script" id=34]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -1156,6 +1157,9 @@ animations = [ {
 "speed": 10.0
 } ]
 
+[sub_resource type="RectangleShape2D" id=50]
+extents = Vector2( 13.1034, 19.3304 )
+
 [node name="World" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -1177,7 +1181,7 @@ centered = false
 [node name="BreakTimer" type="Timer" parent="."]
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 300, 109 )
+position = Vector2( 293.776, 106.616 )
 collision_mask = 2
 script = ExtResource( 3 )
 __meta__ = {
@@ -1207,6 +1211,7 @@ centered = false
 offset = Vector2( -256, -128 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+visible = false
 position = Vector2( 1.5, -1 )
 shape = SubResource( 48 )
 
@@ -1221,6 +1226,15 @@ frames = SubResource( 49 )
 animation = "run"
 offset = Vector2( 3, 3 )
 
+[node name="PickupZone" type="Area2D" parent="Player"]
+collision_layer = 0
+collision_mask = 4
+script = ExtResource( 34 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/PickupZone"]
+position = Vector2( 1.25, -1 )
+shape = SubResource( 50 )
+
 [node name="UserInterface" type="CanvasLayer" parent="."]
 script = ExtResource( 24 )
 
@@ -1231,3 +1245,5 @@ visible = false
 position = Vector2( 192.884, 132.149 )
 collision_layer = 4
 collision_mask = 2
+[connection signal="body_entered" from="Player/PickupZone" to="Player/PickupZone" method="_on_PickupZone_body_entered"]
+[connection signal="body_exited" from="Player/PickupZone" to="Player/PickupZone" method="_on_PickupZone_body_exited"]

@@ -62,3 +62,11 @@ func _physics_process(delta):
 			motion.y = JUMP_HEIGHT
 	
 	motion = 	move_and_slide(motion, UP)
+	
+	pickup()
+
+func pickup():
+	if $PickupZone.items_in_range.size() > 0:
+		var pickup_item = $PickupZone.items_in_range.values()[0]
+		pickup_item.pick_up_item(self)
+		$PickupZone.items_in_range.erase(pickup_item)
