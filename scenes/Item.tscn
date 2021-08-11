@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
+[ext_resource path="res://assets/items/Bloodstone Axe.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Item.gd" type="Script" id=2]
 
 [node name="Item" type="Node2D"]
@@ -10,6 +11,18 @@ script = ExtResource( 2 )
 margin_right = 40.0
 margin_bottom = 40.0
 mouse_filter = 2
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 3.53327
+margin_top = 10.3084
+margin_right = 43.5333
+margin_bottom = 24.3084
+rect_scale = Vector2( 0.6, 0.6 )
+text = "999"
 __meta__ = {
 "_edit_use_anchors_": false
 }

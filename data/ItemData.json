@@ -4,9 +4,14 @@
 		"Description": "Paul Bunyan would approve.",
 		"Damage": 5,
 		"MineSpeed": 1,
-		"Type": "Wood",
+		"Type": "Wood"
 	},
 	"Diamond Bullet": {
 		"StackSize": 999,
-		"Description": "Use in bloodstone guns.",
+		"Description": "Use in bloodstone guns."
+	},
+	"Stick": {
+		"StackSize": 999,
+		"Description": "Crafting resource."
 	}
+}
