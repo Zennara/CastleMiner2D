@@ -1,0 +1,12 @@
+{
+	"Bloodstone Axe": {
+		"StackSize": 1,
+		"Description": "Paul Bunyan would approve.",
+		"Damage": 5,
+		"MineSpeed": 1,
+		"Type": "Wood",
+	},
+	"Diamond Bullet": {
+		"StackSize": 999,
+		"Description": "Use in bloodstone guns.",
+	}

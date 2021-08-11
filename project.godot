@@ -19,6 +19,10 @@ config/name="CastleMiner2D"
 run/main_scene="res://scenes/world.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+JsonData="*res://scripts/JsonData.gd"
+
 [display]
 
 window/size/width=600
