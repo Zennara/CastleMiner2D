@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/compass.png-798bb08cc2a3614891ec3aa675b6a69c.stex"
+path="res://.import/Compass.png-64b3200a1ffefd5b2f0b79b9e2366119.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/compass.png"
-dest_files=[ "res://.import/compass.png-798bb08cc2a3614891ec3aa675b6a69c.stex" ]
+source_file="res://assets/items/Compass.png"
+dest_files=[ "res://.import/Compass.png-64b3200a1ffefd5b2f0b79b9e2366119.stex" ]
 
 [params]
 

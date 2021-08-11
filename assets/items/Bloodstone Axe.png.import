@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gold.png-700f4dbf31605de82ba2ffbe62c2724a.stex"
+path="res://.import/Bloodstone Axe.png-650f3932db743d99c6832d4ff8457275.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/Gold.png"
-dest_files=[ "res://.import/Gold.png-700f4dbf31605de82ba2ffbe62c2724a.stex" ]
+source_file="res://assets/items/Bloodstone Axe.png"
+dest_files=[ "res://.import/Bloodstone Axe.png-650f3932db743d99c6832d4ff8457275.stex" ]
 
 [params]
 

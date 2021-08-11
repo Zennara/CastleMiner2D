@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gold.png-700f4dbf31605de82ba2ffbe62c2724a.stex"
+path="res://.import/Gold Knife.png-11aacdec528b9daf7f60bd10ee7e9c15.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/Gold.png"
-dest_files=[ "res://.import/Gold.png-700f4dbf31605de82ba2ffbe62c2724a.stex" ]
+source_file="res://assets/items/Gold Knife.png"
+dest_files=[ "res://.import/Gold Knife.png-11aacdec528b9daf7f60bd10ee7e9c15.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gold.png-700f4dbf31605de82ba2ffbe62c2724a.stex"
+path="res://.import/Copper Pickaxe.png-c5a3834117ee36891a1af52c4eb97065.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/Gold.png"
-dest_files=[ "res://.import/Gold.png-700f4dbf31605de82ba2ffbe62c2724a.stex" ]
+source_file="res://assets/items/Copper Pickaxe.png"
+dest_files=[ "res://.import/Copper Pickaxe.png-c5a3834117ee36891a1af52c4eb97065.stex" ]
 
 [params]
 

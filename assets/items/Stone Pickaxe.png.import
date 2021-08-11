@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gold.png-700f4dbf31605de82ba2ffbe62c2724a.stex"
+path="res://.import/Stone Pickaxe.png-732f7d049b2dac23f5e45cc58c27e617.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/Gold.png"
-dest_files=[ "res://.import/Gold.png-700f4dbf31605de82ba2ffbe62c2724a.stex" ]
+source_file="res://assets/items/Stone Pickaxe.png"
+dest_files=[ "res://.import/Stone Pickaxe.png-732f7d049b2dac23f5e45cc58c27e617.stex" ]
 
 [params]
 

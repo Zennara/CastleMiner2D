@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/coal.png-983f6f01beeba1a7cbb29977cd0a5915.stex"
+path="res://.import/Coal.png-9552517e5146777e65d1b16de1c1cf6b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/coal.png"
-dest_files=[ "res://.import/coal.png-983f6f01beeba1a7cbb29977cd0a5915.stex" ]
+source_file="res://assets/items/Coal.png"
+dest_files=[ "res://.import/Coal.png-9552517e5146777e65d1b16de1c1cf6b.stex" ]
 
 [params]
 

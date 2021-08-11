@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gold.png-700f4dbf31605de82ba2ffbe62c2724a.stex"
+path="res://.import/Blue Laser Sword.png-cb7f3d1300d3566d6ef8a3113d0f8284.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/Gold.png"
-dest_files=[ "res://.import/Gold.png-700f4dbf31605de82ba2ffbe62c2724a.stex" ]
+source_file="res://assets/items/Blue Laser Sword.png"
+dest_files=[ "res://.import/Blue Laser Sword.png-cb7f3d1300d3566d6ef8a3113d0f8284.stex" ]
 
 [params]
 

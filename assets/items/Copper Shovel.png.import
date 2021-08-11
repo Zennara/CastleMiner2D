@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gold.png-700f4dbf31605de82ba2ffbe62c2724a.stex"
+path="res://.import/Copper Shovel.png-4c50ad46d8345d187e25e76d21374997.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/Gold.png"
-dest_files=[ "res://.import/Gold.png-700f4dbf31605de82ba2ffbe62c2724a.stex" ]
+source_file="res://assets/items/Copper Shovel.png"
+dest_files=[ "res://.import/Copper Shovel.png-4c50ad46d8345d187e25e76d21374997.stex" ]
 
 [params]
 
