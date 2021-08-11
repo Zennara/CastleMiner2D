@@ -1,6 +1,5 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://assets/items/Iron Sword.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Item.gd" type="Script" id=2]
 
 [node name="Item" type="Node2D"]
@@ -11,7 +10,6 @@ script = ExtResource( 2 )
 margin_right = 40.0
 margin_bottom = 40.0
 mouse_filter = 2
-texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
