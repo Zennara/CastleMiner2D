@@ -16,6 +16,8 @@ var castcords
 var castcords2
 onready var player = get_node("../Player")
 onready var playerbody = get_node("../Player/Body")
+onready var drop = load("res://scenes/ItemDrop.tscn")
+
 
 func _ready():
 	pass
@@ -97,6 +99,13 @@ func _physics_process(delta):
 		#break block
 		if duration >= BREAK_TIME:
 			set_cell(cellx, celly, -1)
+			var blockDrop = drop.instance()
+			blockDrop.position = mouse_pos
+			#TODO: make the file names for the block textures the same as the tilset ID's. This way,
+			#you can interupt the string to set the texture based on the tile ID which will also be the file name,
+			#then create the pickup for said item.
+			blockDrop.get_node("Sprite").texture = load("res://assets/items/Bloodstone Axe.png")
+			get_parent().add_child(blockDrop)
 			duration = 0
 
 	if Input.is_action_just_released("use"):

@@ -23,10 +23,12 @@ tracks/0/keys = {
 }
 
 [node name="ItemDrop" type="KinematicBody2D"]
+collision_layer = 4
+collision_mask = 2
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 0, -0.302862 )
+position = Vector2( 0, -0.111638 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 1 )
 
