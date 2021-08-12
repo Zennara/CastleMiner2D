@@ -2,6 +2,7 @@ extends Panel
 
 var ItemClass = preload("res://scenes/Item.tscn")
 var item = null
+var slot_index
 
 var default_style: StyleBoxTexture = null
 var empty_style: StyleBoxTexture = null
